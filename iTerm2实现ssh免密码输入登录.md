@@ -40,7 +40,7 @@ interact
 为了在配置Profile时免去输入sshlogin.sh脚本的全路径，我们为sshlogin.sh添加alias，方法很简单，在~/.bash_profile中添加如下内容:
 
 ```bash
-alias sshlogin="~/Codes/mac_xin/item2_dynprop/login.sh"
+alias sshlogin="~/Codes/mac_xin/item2_dynprop/sshlogin.sh"
 ```
 
 在iTerm2中，依次选择iTerm2 -> Preferences -> Profiles建立一个新的profile，如下图，在Command中填入内容：
