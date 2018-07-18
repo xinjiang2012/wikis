@@ -43,7 +43,7 @@ interact
 alias sshlogin="~/Codes/mac_xin/item2_dynprop/sshlogin.sh"
 ```
 
-在iTerm2中，依次选择iTerm2 -> Preferences -> Profiles建立一个新的profile，如下图，在Command中填入内容：
+在iTerm2中，依次选择iTerm2 -> Preferences -> Profiles建立一个新的profile，如下图，选择*Login shell*在*Send text at start*中填入内容：
 ```bash
 sshlogin 192.168.3.15 test password
 ```
