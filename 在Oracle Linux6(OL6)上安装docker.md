@@ -51,4 +51,15 @@ $exec  $other_args &>> $logfile &
 ```language
 # service docker status
 并且检查log文件 /var/log/docker 是否有错
+
+10. 设置代理
+可以通过在文件/etc/sysconfig/docker中为Docker设置代理(注意，在oracle linux下有些不同)。在文件中添加如下内容。
+```shell
+export HTTP_PROXY=http://www-proxy.us.oracle.com:80
+export HTTPS_PROXY=http://www-proxy.us.oracle.com:80
+export NO_PROXY=localhost,127.0.0.1
+```
+使用下面命令重启Docker进程
+```shell
+sudo /sbin/service docker restart
 ```
